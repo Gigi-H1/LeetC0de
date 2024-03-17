@@ -1,0 +1,19 @@
+char findTheDifference(char* s, char* t) {
+    size_t len1 = strlen(s);
+    size_t len2 = strlen(t);
+    size_t index = 0;
+    size_t i = 0;
+    size_t j = 0;
+    
+   
+    while(i < len1 && j < len2){
+         
+            if(s[i] != t[j]){
+                return t[j];
+            }
+            i++;
+            j++; 
+        }
+     return t[len2 - 1];
+    
+}
